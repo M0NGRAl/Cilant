@@ -1,0 +1,301 @@
+.guides-container {
+    padding: 20px 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.model-group {
+    margin-bottom: 30px;
+    background-color: #d6d6d6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.model-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.model-input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.model-input-name {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.model-input-description {
+    min-width: 600px;
+}
+
+.model-input:focus {
+    border-color: #163E6C;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(22, 62, 108, 0.2);
+}
+
+.save-button {
+    padding: 12px 40px;
+    background-color: #163E6C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.save-button:hover {
+    background-color: #14375e;
+}
+
+.save-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.home-button {
+    padding: 15px 35px;
+    background-color: #163E6C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #3a5a8f;
+}
+
+.loading, .error, .saving-indicator {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.loading {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.error {
+    background-color: #ffdddd;
+    color: #d8000c;
+}
+
+.saving-indicator {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+h1 {
+    color: #163E6C;
+    margin: 0;
+}
+
+h2 {
+    color: #163E6C;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .guides-container {
+        padding: 10px 30px;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    .header-section {
+        margin-bottom: 15px;
+    }
+
+    .model-group {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .model-item {
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+
+    .model-input {
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .model-input-name {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .model-input-description {
+        min-width: 500px;
+    }
+
+
+    .save-button {
+        padding: 10px 35px;
+        font-size: 14px;
+    }
+
+    .home-button {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+
+    .loading, .error, .saving-indicator {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    h2 {
+        color: #163E6C;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    .guides-container {
+        padding: 10px 20px;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .header-section {
+        margin-bottom: 10px;
+    }
+
+    .model-group {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .model-item {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .model-input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .model-input-name {
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .model-input-description {
+        min-width: 300px;
+    }
+
+
+    .save-button {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+
+    .home-button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .loading, .error, .saving-indicator {
+        padding: 8px;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 510px) {
+    .guides-container {
+        padding: 6px 10px;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .header-section {
+        margin-bottom: 8px;
+    }
+
+    .model-group {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .model-item {
+        margin-bottom: 8px;
+        gap: 8px;
+    }
+
+    .model-input {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    .model-input-name {
+        min-width: 80px;
+        max-width: 120px;
+    }
+
+    .model-input-description {
+        min-width: 100px;
+    }
+
+
+    .save-button {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+
+    .home-button {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    .loading, .error, .saving-indicator {
+        padding: 8px;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+
+    h2 {
+        font-size: 16px;
+    }
+}

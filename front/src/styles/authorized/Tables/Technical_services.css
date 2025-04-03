@@ -1,0 +1,75 @@
+.technical-services-container {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left ;
+}
+
+/* Заголовок */
+.technical-services-container .results-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  color: #333;
+}
+
+
+
+/* Таблица */
+.technical-services-container .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.technical-services-container .table-responsive .result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.technical-services-container .result-table tbody tr.clickable-row {
+    transition: background-color 0.2s ease;
+}
+
+.technical-services-container .result-table tbody tr.clickable-row:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.technical-services-container .result-table tbody tr.clickable-row:active {
+    background-color: #ebebeb !important;
+}
+
+
+.technical-services-container .result-table td:nth-child(6) {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.technical-services-container .result-table td:nth-child(4),
+.technical-services-container .result-table td:nth-child(7) {
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .technical-services-container .result-table thead th {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .technical-services-container .result-table tbody td {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .technical-services-container .result-table thead th {
+        font-size: 10px;
+        padding: 8px 6px;
+    }
+
+    .technical-services-container .result-table tbody td {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+}

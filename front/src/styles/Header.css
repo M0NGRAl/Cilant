@@ -1,0 +1,152 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.header-logo-section img {
+    height: 100px;
+    width: auto;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-info p {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.tg-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tg-section img {
+    padding-bottom: 10px;
+    height: 40px;
+    width: auto;
+}
+
+.authorization-section button {
+    padding: 16px 60px;
+    font-size: 14px;
+    background-color: #11549b;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.authorization-section button:hover {
+    background-color: #163E6C;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 30px;
+    }
+    .header-logo-section img {
+        height: 70px;
+    }
+
+    .header-info p {
+        font-size: 20px;
+    }
+
+    .tg-section img {
+        height: 40px;
+    }
+
+    .authorization-section button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 10px 20px;
+    }
+    .header-logo-section img {
+        height: 50px;
+    }
+
+    .header-info p {
+        font-size: 16px;
+    }
+
+    .tg-section img {
+        height: 20px;
+    }
+
+    .authorization-section button {
+        padding: 8px 25px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        padding: 10px 10px;
+    }
+    .header-logo-section img {
+        height: 40px;
+    }
+
+    .header-info p {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .tg-section img {
+        height: 20px;
+    }
+
+    .authorization-section button {
+        padding: 8px 25px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .header-info p {
+        padding-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .tg-section img {
+        height: 20px;
+    }
+
+    .authorization-section button {
+        padding: 7px 22px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .header-info p {
+        padding-bottom: 3px;
+        font-size: 9px;
+    }
+
+    .tg-section img {
+        height: 17px;
+    }
+
+    .authorization-section button {
+        padding: 6px 20px;
+        font-size: 8px;
+    }
+}
+

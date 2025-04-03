@@ -1,0 +1,68 @@
+.main-panel-container title {
+    display: none;
+}
+
+.user-role-badge {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+}
+
+.main-panel-text {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.manager-button {
+    padding: 15px 40px;
+    background-color: #163E6C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.manager-button:hover {
+    background-color: #14375e;
+}
+
+/* Адаптивные стили */
+@media (max-width: 800px) {
+    .user-role-badge {
+        font-size: 28px;
+    }
+
+    .main-panel-text {
+        font-size: 20px;
+        padding-top: 20px;
+
+    }
+    .manager-button {
+        padding: 10px 30px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-role-badge {
+        font-size: 22px;
+    }
+
+    .main-panel-text {
+        font-size: 16px;
+        padding-top: 15px;
+
+    }
+    .manager-button {
+        padding: 8px 26px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}

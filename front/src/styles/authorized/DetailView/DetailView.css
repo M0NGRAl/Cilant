@@ -1,0 +1,185 @@
+.views-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #d8d8d8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.view-header h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.view-details.single-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.detail-section {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #163E6C;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.detail-section p {
+    margin: 12px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.detail-section span {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 230px;
+    color: #333;
+}
+
+.edit-btn {
+    padding: 12px 24px;
+    background-color: #163E6C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #14375e;
+}
+
+@media (max-width: 1000px) {
+    .view-header h2 {
+        font-size: 22px;
+    }
+
+
+    .detail-section h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .detail-section p {
+        margin: 12px 0;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .detail-section span {
+        min-width: 200px;
+    }
+
+    .edit-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .views-container {
+        max-width: 1200px;
+        padding: 15px;
+
+    }
+
+    .detail-section {
+        padding: 10px;
+}
+
+    .view-header h2 {
+        font-size: 18px;
+    }
+
+
+    .detail-section h3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .detail-section p {
+        margin: 10px 0;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .detail-section span {
+        min-width: 150px;
+    }
+
+    .edit-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .views-container {
+        padding: 10px;
+        background: #e8e8e8;
+    }
+
+    .view-header h2 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .edit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .view-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detail-section {
+        padding: 15px;
+    }
+
+    .detail-section h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .detail-section p {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .detail-section span {
+        min-width: 100%;
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+}
+

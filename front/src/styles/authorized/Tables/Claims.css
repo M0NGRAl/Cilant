@@ -1,0 +1,78 @@
+.claims-container {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left ;
+}
+
+.claims-container .results-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  color: #333;
+}
+
+
+/* Таблица */
+.claims-container .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.claims-container .table-responsive .result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+
+
+/* Специфичные стили для ячеек с длинным текстом */
+.claims-container .result-table td:nth-child(5),
+.claims-container .result-table td:nth-child(7) {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.claims-container .result-table td:nth-child(3),
+.claims-container .result-table td:nth-child(8) {
+    white-space: nowrap;
+}
+
+.claims-container .result-table tbody tr.clickable-row {
+    transition: background-color 0.2s ease;
+}
+
+.claims-container .result-table tbody tr.clickable-row:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.claims-container .result-table tbody tr.clickable-row:active {
+    background-color: #ebebeb !important;
+}
+
+@media (max-width: 1200px) {
+    .claims-container .result-table thead th {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .claims-container .result-table tbody td {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .claims-container .result-table thead th {
+        font-size: 10px;
+        padding: 8px 6px;
+    }
+
+    .claims-container .result-table tbody td {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+}

@@ -1,0 +1,24 @@
+.authorization-container {
+    margin: 0 auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .authorization-container {
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 800px) {
+    .authorization-container{
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .authorization-container{
+        padding: 10px 10px;
+    }
+}
