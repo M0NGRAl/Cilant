@@ -87,8 +87,12 @@ WSGI_APPLICATION = 'back.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'silant',
+        'USER': 'postgres',
+        'PASSWORD': '875901304',
+        'HOST': 'localhost',  # или IP сервера
+        'PORT': '5432',       # стандартный порт PostgreSQL
     }
 }
 
@@ -158,8 +162,10 @@ AUTHENTICATION_BACKENDS = (
 
 
 
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
+    "http://localhost",
 ]
 
 CORS_ALLOW_HEADERS = [
